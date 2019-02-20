@@ -19,6 +19,9 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<apache.commons.version>3.0</apache.commons.version>
+		<google.guava.version>27.0.1-jre</google.guava.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<commons.io.version>2.6</commons.io.version>
 		<junit.version>4.12</junit.version>
 		<mockito.version>2.24.5</mockito.version>
 	</properties>
@@ -28,7 +31,22 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>${apache.commons.version}</version><!--$NO-MVN-MAN-VER$-->
+			<version>${apache.commons.version}</version><!--$NO-MVN-MAN-VER$ -->
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${google.guava.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version><!--$NO-MVN-MAN-VER$ -->
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons.io.version}</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 		<!-- Spring Dependencies -->
 		<dependency>
@@ -57,13 +75,13 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junit.version}</version><!--$NO-MVN-MAN-VER$-->
+			<version>${junit.version}</version><!--$NO-MVN-MAN-VER$ -->
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>${mockito.version}</version><!--$NO-MVN-MAN-VER$-->
+			<version>${mockito.version}</version><!--$NO-MVN-MAN-VER$ -->
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
